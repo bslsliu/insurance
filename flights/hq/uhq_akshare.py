@@ -2,6 +2,9 @@ import datetime
 import pandas as pd
 import backtrader as bt
 from datetime import datetime
+import warnings
+warnings.filterwarnings("ignore")
+
 import akshare as ak
 
 # 数据源：东方财富

@@ -4,33 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d2bf03f-2cf0-412d-b7c0-3a6ab6652d2c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/insurance.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/csdn_result_demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/wx-result-demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/wx-spider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flights/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flights/backtesting/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flights/backtesting/stock_backtest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flights/backtesting/stock_opt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flights/backtesting/strategy_a500_opt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flights/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flights/hq/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flights/hq/uhq_akshare.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flights/hq/uhq_futu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flights/hq/uhq_tushare.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flights/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flights/quote_snapshot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_corr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_overlay.py" afterDir="false" />
+    <list default="true" id="5d2bf03f-2cf0-412d-b7c0-3a6ab6652d2c" name="Changes" comment="save today work">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flights/backtesting/strategy_a500_opt.py" beforeDir="false" afterPath="$PROJECT_DIR$/flights/backtesting/strategy_a500_opt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flights/hq/uhq_akshare.py" beforeDir="false" afterPath="$PROJECT_DIR$/flights/hq/uhq_akshare.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Unit Test" />
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -82,13 +59,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.core.executor": "Debug",
     "Python.main.executor": "Debug",
     "Python.quote_snapshot.executor": "Run",
     "Python.stock_backtest.executor": "Run",
     "Python.stock_opt.executor": "Debug",
     "Python.strategy_a500_opt.executor": "Run",
     "Python.strategys.executor": "Run",
-    "Python.uhq_akshare.executor": "Debug",
+    "Python.uhq_akshare.executor": "Run",
+    "Python.uhq_futu.executor": "Run",
     "Python.utils.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -99,7 +78,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.intellij.jupyter.core.jupyter.connections.configuration.JupyterServerConfigurable",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -108,11 +87,35 @@
       <recent name="$PROJECT_DIR$/docs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/flights/backtesting/result" />
       <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/flights" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.csdn_result_demo">
+  <component name="RunManager" selected="Python.strategy_a500_opt">
+    <configuration name="core" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="insurance" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="/opt/anaconda3/envs/liujy39/lib/python3.9/site-packages/quantstats/_plotting" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="/opt/anaconda3/envs/liujy39/lib/python3.9/site-packages/quantstats/_plotting/core.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="csdn_result_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="insurance" />
       <option name="ENV_FILES" value="" />
@@ -128,52 +131,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/docs/csdn_result_demo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="stock_backtest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="insurance" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flights/backtesting" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flights/backtesting/stock_backtest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="stock_opt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="insurance" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flights/backtesting" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flights/backtesting/stock_opt.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -228,13 +185,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="uhq_futu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="insurance" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flights/hq" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flights/hq/uhq_futu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.csdn_result_demo" />
         <item itemvalue="Python.strategy_a500_opt" />
-        <item itemvalue="Python.stock_opt" />
         <item itemvalue="Python.uhq_akshare" />
-        <item itemvalue="Python.stock_backtest" />
+        <item itemvalue="Python.uhq_futu" />
+        <item itemvalue="Python.core" />
+        <item itemvalue="Python.csdn_result_demo" />
       </list>
     </recent_temporary>
   </component>
@@ -263,8 +243,24 @@
       <workItem from="1738810552698" duration="3941000" />
       <workItem from="1738897591835" duration="34827000" />
       <workItem from="1739242267994" duration="22648000" />
-      <workItem from="1739345619247" duration="23939000" />
+      <workItem from="1739345619247" duration="26257000" />
+      <workItem from="1739497915952" duration="11150000" />
+      <workItem from="1739537254944" duration="6367000" />
+      <workItem from="1739602080813" duration="14994000" />
+      <workItem from="1739757779267" duration="1083000" />
+      <workItem from="1739761869604" duration="806000" />
+      <workItem from="1739762679289" duration="34000" />
+      <workItem from="1739762722882" duration="7613000" />
     </task>
+    <task id="LOCAL-00001" summary="save today work">
+      <option name="closed" value="true" />
+      <created>1739442415609</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739442415609</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +277,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="save today work" />
+    <option name="LAST_COMMIT_MESSAGE" value="save today work" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <default-breakpoints>
@@ -291,21 +291,17 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="len(self)" language="Python" />
-        <watch expression="len(self.data)" language="Python" />
-        <watch expression="self.data.datetime.date(-1) " language="Python" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/insurance$stock_opt.coverage" NAME="stock_opt Coverage Results" MODIFIED="1739001520986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights/backtesting" />
+    <SUITE FILE_PATH="coverage/insurance$core.coverage" NAME="core Coverage Results" MODIFIED="1739616688466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/opt/anaconda3/envs/liujy39/lib/python3.9/site-packages/quantstats/_plotting" />
     <SUITE FILE_PATH="coverage/insurance$stock_backtest.coverage" NAME="stock_backtest Coverage Results" MODIFIED="1738920213827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights/backtesting" />
     <SUITE FILE_PATH="coverage/insurance$main.coverage" NAME="main Coverage Results" MODIFIED="1737711723509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights" />
+    <SUITE FILE_PATH="coverage/insurance$uhq_futu.coverage" NAME="uhq_futu Coverage Results" MODIFIED="1739762304620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights/hq" />
     <SUITE FILE_PATH="coverage/insurance$quote_snapshot.coverage" NAME="quote_snapshot Coverage Results" MODIFIED="1737712227375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights" />
-    <SUITE FILE_PATH="coverage/insurance$uhq_akshare.coverage" NAME="uhq_akshare Coverage Results" MODIFIED="1738978048078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights/hq" />
+    <SUITE FILE_PATH="coverage/insurance$uhq_akshare.coverage" NAME="uhq_akshare Coverage Results" MODIFIED="1739764933716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights/hq" />
     <SUITE FILE_PATH="coverage/insurance$strategys.coverage" NAME="strategy_a500_opt Coverage Results" MODIFIED="1739440750452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights/backtesting" />
     <SUITE FILE_PATH="coverage/insurance$utils.coverage" NAME="utils Coverage Results" MODIFIED="1739441827361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights" />
+    <SUITE FILE_PATH="coverage/insurance$strategy_a500_opt.coverage" NAME="strategy_a500_opt Coverage Results" MODIFIED="1739772085885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights/backtesting" />
   </component>
 </project>
