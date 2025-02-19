@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d2bf03f-2cf0-412d-b7c0-3a6ab6652d2c" name="Changes" comment="save today work">
+    <list default="true" id="5d2bf03f-2cf0-412d-b7c0-3a6ab6652d2c" name="Changes" comment="optimize code with quantstats">
+      <change afterPath="$PROJECT_DIR$/flights/backtesting/backtest_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flights/backtesting/strategy_opt_东南亚ETF.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flights/backtesting/strategy_opt_红利股.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flights/backtesting/strategy_a500_opt.py" beforeDir="false" afterPath="$PROJECT_DIR$/flights/backtesting/strategy_a500_opt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flights/backtesting/stock_backtest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flights/backtesting/stock_opt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flights/backtesting/strategy_a500_opt.py" beforeDir="false" afterPath="$PROJECT_DIR$/flights/backtesting/strategy_opt_恒生电子.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flights/hq/uhq_akshare.py" beforeDir="false" afterPath="$PROJECT_DIR$/flights/hq/uhq_akshare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flights/hq/uhq_futu.py" beforeDir="false" afterPath="$PROJECT_DIR$/flights/hq/uhq_futu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_corr.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_corr.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Unit Test" />
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -59,12 +66,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests in test_corr.py.executor": "Run",
     "Python.core.executor": "Debug",
     "Python.main.executor": "Debug",
     "Python.quote_snapshot.executor": "Run",
     "Python.stock_backtest.executor": "Run",
     "Python.stock_opt.executor": "Debug",
     "Python.strategy_a500_opt.executor": "Run",
+    "Python.strategy_opt_恒生电子.executor": "Run",
     "Python.strategys.executor": "Run",
     "Python.uhq_akshare.executor": "Run",
     "Python.uhq_futu.executor": "Run",
@@ -92,8 +101,8 @@
       <recent name="$PROJECT_DIR$/flights" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.strategy_a500_opt">
-    <configuration name="core" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.strategy_opt_恒生电子 (1)">
+    <configuration name="strategy_opt_恒生电子 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="insurance" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,12 +111,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="/opt/anaconda3/envs/liujy39/lib/python3.9/site-packages/quantstats/_plotting" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/airbus/backtesting" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="/opt/anaconda3/envs/liujy39/lib/python3.9/site-packages/quantstats/_plotting/core.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/airbus/backtesting/strategy_opt_恒生电子.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -116,30 +125,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="csdn_result_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="insurance" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flights" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/docs/csdn_result_demo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="strategy_a500_opt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="strategy_opt_恒生电子" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="insurance" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,7 +139,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flights/backtesting/strategy_a500_opt.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flights/backtesting/strategy_opt_恒生电子.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -208,13 +194,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test_corr.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="insurance" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_corr.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.strategy_a500_opt" />
-        <item itemvalue="Python.uhq_akshare" />
+        <item itemvalue="Python.strategy_opt_恒生电子 (1)" />
+        <item itemvalue="Python.strategy_opt_恒生电子" />
         <item itemvalue="Python.uhq_futu" />
-        <item itemvalue="Python.core" />
-        <item itemvalue="Python.csdn_result_demo" />
+        <item itemvalue="Python.uhq_akshare" />
+        <item itemvalue="Python tests.Python tests in test_corr.py" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +252,8 @@
       <workItem from="1739757779267" duration="1083000" />
       <workItem from="1739761869604" duration="806000" />
       <workItem from="1739762679289" duration="34000" />
-      <workItem from="1739762722882" duration="7613000" />
+      <workItem from="1739762722882" duration="46956000" />
+      <workItem from="1739949012457" duration="2153000" />
     </task>
     <task id="LOCAL-00001" summary="save today work">
       <option name="closed" value="true" />
@@ -260,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739442415609</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="optimize code with quantstats">
+      <option name="closed" value="true" />
+      <created>1739772692660</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739772692660</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,10 +290,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="save today work" />
-    <option name="LAST_COMMIT_MESSAGE" value="save today work" />
+    <MESSAGE value="optimize code with quantstats" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimize code with quantstats" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file:///opt/anaconda3/envs/liujy39/lib/python3.9/site-packages/empyrical/stats.py</url>
+          <line>441</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -295,13 +314,15 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/insurance$stock_opt.coverage" NAME="stock_opt Coverage Results" MODIFIED="1739001520986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights/backtesting" />
     <SUITE FILE_PATH="coverage/insurance$core.coverage" NAME="core Coverage Results" MODIFIED="1739616688466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/opt/anaconda3/envs/liujy39/lib/python3.9/site-packages/quantstats/_plotting" />
+    <SUITE FILE_PATH="coverage/insurance$strategy_opt_.coverage" NAME="strategy_opt_恒生电子 Coverage Results" MODIFIED="1739951064377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights/backtesting" />
+    <SUITE FILE_PATH="coverage/insurance$uhq_akshare.coverage" NAME="uhq_akshare Coverage Results" MODIFIED="1739857437231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights/hq" />
+    <SUITE FILE_PATH="coverage/insurance$strategys.coverage" NAME="strategy_a500_opt Coverage Results" MODIFIED="1739440750452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights/backtesting" />
+    <SUITE FILE_PATH="coverage/insurance$.coverage" NAME=" Coverage Results" MODIFIED="1739782517420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/insurance$stock_backtest.coverage" NAME="stock_backtest Coverage Results" MODIFIED="1738920213827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights/backtesting" />
     <SUITE FILE_PATH="coverage/insurance$main.coverage" NAME="main Coverage Results" MODIFIED="1737711723509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights" />
-    <SUITE FILE_PATH="coverage/insurance$uhq_futu.coverage" NAME="uhq_futu Coverage Results" MODIFIED="1739762304620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights/hq" />
+    <SUITE FILE_PATH="coverage/insurance$uhq_futu.coverage" NAME="uhq_futu Coverage Results" MODIFIED="1739879855125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights/hq" />
     <SUITE FILE_PATH="coverage/insurance$quote_snapshot.coverage" NAME="quote_snapshot Coverage Results" MODIFIED="1737712227375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights" />
-    <SUITE FILE_PATH="coverage/insurance$uhq_akshare.coverage" NAME="uhq_akshare Coverage Results" MODIFIED="1739764933716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights/hq" />
-    <SUITE FILE_PATH="coverage/insurance$strategys.coverage" NAME="strategy_a500_opt Coverage Results" MODIFIED="1739440750452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights/backtesting" />
     <SUITE FILE_PATH="coverage/insurance$utils.coverage" NAME="utils Coverage Results" MODIFIED="1739441827361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights" />
-    <SUITE FILE_PATH="coverage/insurance$strategy_a500_opt.coverage" NAME="strategy_a500_opt Coverage Results" MODIFIED="1739772085885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights/backtesting" />
+    <SUITE FILE_PATH="coverage/insurance$strategy_a500_opt.coverage" NAME="strategy_a500_opt Coverage Results" MODIFIED="1739945657935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flights/backtesting" />
   </component>
 </project>
